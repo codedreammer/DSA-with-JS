@@ -73,5 +73,38 @@ console.log(smallestArr);
 */
 
 // Count Even Numbers in Array
+/*
+let arr = [1,2,3,4,5,6,7];
+let count = 0;
 
-let Arr = [1,2,4,7,8];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+        count++;
+    }
+}
+
+console.log(count);
+*/
+
+// Insert Element in Array (do counting of the array from end)
+
+/*
+let arr = [20,30,4,5,7];
+let newEl = 70;
+let position = 2;
+
+for (let i = arr.length - 1; i >= position; i--) {
+    arr[i + 1] = arr[i];
+}
+arr[position] = newEl;
+console.log(arr);
+*/
+
+// Insert Element in Array using splice 
+
+/*
+let arr = [1,2,3,4,5,6];
+arr.splice(2,3,10);
+console.log(arr);
+*/
+
