@@ -42,6 +42,17 @@ for (let i = 1; i < Arr.length; i++) {
 }
 console.log(LargestArr);
 */
+/*
+let Arr = [20,30,40,100,10];
+let smallestArr = Arr[0];
+for (let i = 1; i < Arr.length; i++) {
+    if (Arr[i] < smallestArr) {
+        smallestArr = Arr[i];
+    }
+}
+console.log(smallestArr);
+*/
+
 //           Or
 
 /*
@@ -99,6 +110,22 @@ for (let i = arr.length - 1; i >= position; i--) {
 arr[position] = newEl;
 console.log(arr);
 */
+/*
+let data = [10,20,30,40];
+let newElement = 25;
+let position = 2;
+
+for (let i = data.length-1; i >= position; i--) {
+    data[i+1] = data[i];
+}
+data[position] = newElement;
+console.log(data);
+*/
+/*
+let data = [10,20,30,40];
+data.splice(2,30,90);
+console.log(data);
+*/
 
 // Insert Element in Array using splice 
 
@@ -107,4 +134,21 @@ let arr = [1,2,3,4,5,6];
 arr.splice(2,3,10);
 console.log(arr);
 */
+
+// we use 0 when we want to insert without deleting anything
+
+/*
+let arr = [1,2,3,4,5,6];
+arr.splice(4,0,15);
+console.log(arr);
+*/
+
+// we use 1 when we want to insert and replace the number anything from insert number
+
+/*
+let arr = [1,2,3,4,5,6];
+arr.splice(4,1,15);
+console.log(arr);
+*/
+
 
