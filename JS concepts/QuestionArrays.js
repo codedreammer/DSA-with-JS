@@ -15,6 +15,15 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(sum);
 */
+/*
+let arr = [10,20,30];
+let sum =0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    
+}
+console.log(sum);
+*/
 
 // marging two arrays then it's sum
 
@@ -42,6 +51,38 @@ for (let i = 1; i < Arr.length; i++) {
 }
 console.log(LargestArr);
 */
+// find the second largest number from an array[ for the second-largest pattern, using:  let LargestArr = -Infinity; let SmallestArr = -Infinity; ]
+
+/*
+let Arr = [4,7,1,9,2];
+let LargestArr = -Infinity;
+let SmallestArr = -Infinity;
+
+for (let i = 0; i < Arr.length; i++) {
+    if (Arr[i] > LargestArr) {
+        SmallestArr = LargestArr;
+        LargestArr = Arr[i];
+    }
+
+    else if (Arr[i] > SmallestArr && Arr[i] < LargestArr) {
+        SmallestArr = Arr[i];
+    }
+}
+console.log(SmallestArr);
+
+*/
+
+/*
+let arr = [10,50,20,70,30];
+let largestarr = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largestarr) {
+        largestarr = arr[i];
+    }
+    }
+    console.log(largestarr);
+    */
 /*
 let Arr = [20,30,40,100,10];
 let smallestArr = Arr[0];
@@ -53,7 +94,7 @@ for (let i = 1; i < Arr.length; i++) {
 console.log(smallestArr);
 */
 
-//           Or
+//           Or largest using Math
 
 /*
 let arr = [5, 2, 9, 1, 7];
@@ -94,6 +135,33 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
+console.log(count);
+*/
+
+// count occurrence of a number in an array
+/*
+let data = [20,10,20,30,20];
+let target = 20;
+let count = 0;
+
+for (let i = 0; i < data.length; i++) {
+    if (target === data[i]) { // we use === for comparison 
+        count++;
+    }
+}
+console.log(count);
+*/
+
+/*
+let Arr = [10,11,12,13,14];
+let count = 0;
+
+for (let i = 0; i < Arr.length; i++) {
+    if (Arr[i]% 2 === 0) {
+        count++;
+    }
+    
+}
 console.log(count);
 */
 
