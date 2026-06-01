@@ -75,6 +75,7 @@ for (let i = 0; i < data.length; i++) {
 console.log(count);
 */
 
+/*
 let data = [5,5,5,5,5];
 let target = 5;
 let count = 0;
@@ -86,3 +87,73 @@ for (let i = 0; i < data.length; i++) {
     
 }
 console.log(count);
+*/
+// count last element of an arrys 
+/*
+let data = [10,20,30,20,50];
+let target = 20;
+let index = null;
+
+for (let i = data.length-1; i >= 0; i--) {
+    if (data[i] === target) {
+        index = i;
+        break;
+    }
+}
+
+console.log(index);
+// short method
+// console.log(data.lastIndexOf(target));
+
+// find the first number greater then 50 
+
+/*
+let data = [10,20,45,55,70];
+let index = null;
+
+for (let i = 0; i < data.length; i++) {
+    if (data[i] > 50) {
+        index = data[i];
+        break;
+    }
+}
+console.log(index);
+*/
+
+// finding two diff number from an array
+/*
+let arr = [10, 20, 30, 40, 55, 60, 65, 70];
+let firstOver50 = null;
+let firstOver60 = null;
+
+for (let i = 0; i < arr.length; i++) {
+  let value = arr[i];
+
+  if (value > 50 && firstOver50 === null) {
+    firstOver50 = value;
+  }
+
+  if (value > 60 && firstOver60 === null) {
+    firstOver60 = value;
+  }
+
+  if (firstOver50 !== null && firstOver60 !== null) {
+    break;
+  }
+}
+
+console.log(firstOver50);
+console.log(firstOver60);
+*/
+
+// find the first even number 
+
+let data = [11,13,15,18,21];
+let index = null;
+
+for (let i = 0; i < data.length; i++) {
+    if (data[i] % 2 === 0) {
+        index = data[i]
+    }
+}
+console.log(index);
