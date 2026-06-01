@@ -14,6 +14,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(sum);
+
 */
 /*
 let arr = [10,20,30];
@@ -212,7 +213,6 @@ console.log(arr);
 */
 
 // we use 1 when we want to insert and replace the number anything from insert number
-
 /*
 let arr = [1,2,3,4,5,6];
 arr.splice(4,1,15);
