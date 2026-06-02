@@ -176,6 +176,7 @@ console.log(index);
 
 // 1295. Find Numbers with Even Number of Digits
 
+/*
     let nums = [12, 345, 2, 6, 7896];
     let count = 0;
 
@@ -187,4 +188,17 @@ console.log(index);
     }
 
     console.log(count);
-    
+*/
+// Find number with odd number of digits 
+
+    let nums = [12, 345, 2, 6, 7896];
+    let count = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+    let digits = String(nums[i]).length;
+    if (digits % 2 !== 0) {
+        count++;
+    }
+    }
+
+    console.log(count);
