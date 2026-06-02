@@ -148,6 +148,7 @@ console.log(firstOver60);
 
 // find the first even number 
 
+/*
 let data = [11,13,15,18,21];
 let index = null;
 
@@ -157,3 +158,33 @@ for (let i = 0; i < data.length; i++) {
     }
 }
 console.log(index);
+*/
+
+// find the odd number from an arry
+
+/*
+let data = [2,4,6,9,10];
+let index = null;
+
+for (let i = 0; i < data.length; i++) {
+    if (data[i] % 2 !== 0) {
+        index = data[i];
+    }
+}
+console.log(index);
+*/
+
+// 1295. Find Numbers with Even Number of Digits
+
+    let nums = [12, 345, 2, 6, 7896];
+    let count = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+    let digits = String(nums[i]).length;
+    if (digits % 2 === 0) {
+        count++;
+    }
+    }
+
+    console.log(count);
+    
