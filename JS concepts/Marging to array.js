@@ -1,3 +1,5 @@
+// marging two arrays
+
 /*
 let data = [3,4,7,9,12,34,90];
 let data2 = [5,6,7,10,12,43,55];
@@ -29,3 +31,5 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 const real_another_array = another_array.flat(Infinity);
 console.log(real_another_array);
 */
+
+
