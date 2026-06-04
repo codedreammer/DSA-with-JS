@@ -1,6 +1,6 @@
 // marging two arrays
 
-/*
+
 let data = [3,4,7,9,12,34,90];
 let data2 = [5,6,7,10,12,43,55];
 let data3 = [];
@@ -13,7 +13,7 @@ for (let i = 0; i < data2.length; i++) {
 }
 
 console.log(data3);
-*/
+
 
 // marging using concat 
 /*
