@@ -16,6 +16,9 @@ const RegularUser = {
         }
     }
 }
+details = {...UserDetails, ...RegularUser};
+// console.log(details);
+
 // console.log(RegularUser.User.FullDetails);
 
 // marging object in one 
