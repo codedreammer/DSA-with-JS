@@ -69,6 +69,7 @@ for (let i = 0; i < str.length; i++) {
 console.log(freq);
 */
 
+/*
 let arr = "akshay";
 
 let freq = {};
@@ -83,3 +84,95 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 console.log(freq);
+*/
+
+const car = {
+    brand: "toyata",
+    year: 2022
+};
+
+//console.log(car);
+
+car.color = "black"
+
+//console.log(car);
+
+car.year = 2025
+
+//console.log(car);
+
+delete car.color
+
+//console.log(car);
+
+// count freq 
+/*
+let arr = [1,2,1,3,2,1];
+
+let freq = {}
+
+for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    if (freq[num]) {
+        freq[num]++
+    }else{
+        freq[num] = 1;
+    }
+}
+console.log(freq);
+*/
+
+// Count frequency:
+/*
+let arr = ["apple","banana","apple","mango"];
+
+let freq = {};
+
+for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+
+    if (freq[num]) {
+        freq[num]++
+    }else{
+        freq[num] = 1;
+    }
+}
+console.log(freq);
+*/
+
+// Count character frequency:
+
+/*
+let arr = "hello";
+
+let freq = {};
+
+for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+
+    if (freq[num]) {
+        freq[num]++
+    }else{
+        freq[num] = 1;
+    }
+}
+console.log(freq);
+
+*/
+
+// find duplicate and print true if yes false for no
+/*
+let arr = [1,2,3,1];
+
+let freq = {}
+
+for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    if (freq[num]) {
+        console.log(true);
+        break;
+    }else{
+        freq[num] =1;
+    }
+}
+*/
