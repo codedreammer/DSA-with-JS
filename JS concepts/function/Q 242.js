@@ -20,8 +20,11 @@
 
     let freq1 = {};
     let freq2 = {};
-
-    for (let  key in freq1) {
+    
+    if(s.length !== t.length){
+        console.log("not");
+        
+    }
     for (let i = 0; i < s.length; i++) {
         let num = s[i];
 
@@ -31,17 +34,24 @@
             freq1[num] = 1
         }
     }
+
+    for (let i = 0; i < t.length; i++) {
+        let num = t[i];
+
+        if (freq2[num]) {
+            freq2[num]++
+        }else{
+            freq2[num] = 1
+        }
     }
-        console.log(freq1[key]);
+    console.log(freq1);
+    console.log(freq2);
 
-    // for (let i = 0; i < t.length; i++) {
-    //     let num = t[i];
-
-    //     if (freq2[num]) {
-    //         freq2[num]++
-    //     }else{
-    //         freq2[num] = 1
-    //     }
-    // }
-    // console.log(freq1);
-    // console.log(freq2);
+        for(let key in freq1){
+        if (freq1[key] === freq2[key]) {
+            console.log("anaram");
+            
+        }else{
+            console.log("Not Anagram");
+        }
+    }
