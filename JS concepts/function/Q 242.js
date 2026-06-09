@@ -1,30 +1,18 @@
-    // var isAnagram = function(s, t) {
-    // if (s.length !== t.length) return false;
 
-    // const count = {};
-
-    // for (const ch of s) {
-    //     count[ch] = (count[ch] || 0) + 1;
-    // }
-
-    // for (const ch of t) {
-    //     if (!count[ch]) return false;
-    //     count[ch]--;
-    // }
-
-    // return true;
-    // };
-
-    let s = "anagram";
-    let t = "nagaram";
+    // let s = "anagram";
+    // let t = "nagaram";
+    let s = "car"
+    let t = "rat"
+    function isAnagram(s, t) {
+        
+    if(s.length !== t.length){
+        return false;
+    }
 
     let freq1 = {};
-    let freq2 = {};
-    
-    if(s.length !== t.length){
-        console.log("not");
-        
-    }
+    let freq2 ={};
+
+    // freq for s 
     for (let i = 0; i < s.length; i++) {
         let num = s[i];
 
@@ -35,6 +23,7 @@
         }
     }
 
+    // freq for t 
     for (let i = 0; i < t.length; i++) {
         let num = t[i];
 
@@ -44,14 +33,15 @@
             freq2[num] = 1
         }
     }
-    console.log(freq1);
-    console.log(freq2);
+    // comparing the freq
 
         for(let key in freq1){
-        if (freq1[key] === freq2[key]) {
-            console.log("anaram");
+        if (freq1[key] !== freq2[key]) {
+            return false;
             
-        }else{
-            console.log("Not Anagram");
         }
     }
+    return true;
+}
+console.log(isAnagram(s , t));
+

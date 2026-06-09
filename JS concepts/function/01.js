@@ -7,6 +7,14 @@ function addtwonumber(n1,n2) {
 addtwonumber(2,3); // 5
 addtwonumber("2",3); // 23 because js think it is as a string
 */
+// add two number using return
+/*
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 3));
+*/
+
 
 // printing output by checking the datatype of the number 
 /*
@@ -66,6 +74,7 @@ function handle(user) {
 handle(user);
 */
 
+/*
 let arr = [ 200, 300, 400, 600]
 
 function arrays(getArray) {
@@ -74,3 +83,20 @@ function arrays(getArray) {
 
 // console.log(arrays(arr));
 console.log(arrays([200, 400, 500, 600]));
+*/
+
+let nums = [1,2,3,1];
+
+function duplicate(nums) {
+    let seen = {};
+
+    for (let num of nums) {
+        if (seen[num]) {
+            return true;
+        }
+        seen[num] = 1;
+    }
+    return false;
+}
+console.log(duplicate(nums));
+
