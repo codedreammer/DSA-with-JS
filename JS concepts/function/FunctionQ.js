@@ -55,6 +55,7 @@ console.log(Frequentnum(arr));
 
 // First Non-Repeating Character
 
+/*
 let arr = "swiss";
 
 function nonrepeating(arr) {
@@ -77,3 +78,4 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(nonrepeating(arr));
+*/
