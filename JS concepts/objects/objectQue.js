@@ -52,7 +52,7 @@ if (fruits['mango']) {
 
 // character frequency 
 
-/*
+
 let str = "banana";
 
 let freq = {};
@@ -67,7 +67,6 @@ for (let i = 0; i < str.length; i++) {
     }
 }
 console.log(freq);
-*/
 
 /*
 let arr = "akshay";
