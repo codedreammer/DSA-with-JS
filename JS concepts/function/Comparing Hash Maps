@@ -197,6 +197,7 @@ console.log(uniquefirst(arr1, arr2));
 */
 // find Duplicates
 
+/*
 let arr = [1,2,2,3,3,4]
 
 function Duplicates(arr) {
@@ -221,5 +222,29 @@ for (let i = 0; i < arr.length; i++) {
     return result
 }
     console.log(Duplicates(arr));
-    
+*/
 
+let arr = [1,2,2,3,3,4,5,5]
+
+function Duplicates(arr) {
+let freq = {}
+
+for (let i = 0; i < arr.length; i++) {
+        let num = arr[i]
+
+        if (freq[num]) {
+            freq[num]++
+        }else{
+            freq[num] = 1
+        }
+    }
+    let result = []
+    for(let key in freq
+    ){
+        if(freq[key] === 1){
+            result.push(Number(key))
+        }
+    }
+    return result
+}
+    console.log(Duplicates(arr));
