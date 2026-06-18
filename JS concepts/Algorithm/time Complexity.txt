@@ -1,0 +1,112 @@
+// Time Complexity Cheat Sheet
+
+What is Time Complexity?
+
+Time Complexity tells us:
+How the number of operations grows as input size (n) increases.
+
+Example:
+let arr = [1,2,3,4,5];
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+So it's time Complexity is:
+O(n)
+
+1. Big O Notation
+Used to represent the worst-case growth of an algorithm.
+
+Example:
+for(let i = 0; i < n; i++){
+    console.log(i);
+}
+
+Complexity:
+O(n)
+
+2. O(1) — Constant Time
+Rule:
+Operation count does not depend on input size.
+
+Example:
+let first = arr[0];
+or
+return arr[5];
+
+Complexity:
+O(1)
+Space
+O(1)
+
+3. O(n) Linear Time
+Rule:
+One full traversal of input.
+
+Example:
+for(let i = 0; i < n; i++){
+    console.log(i);
+}
+Complexity:
+O(n)
+
+4. O(n²) — Quadratic Time
+Rule:
+Nested loops.
+
+Example:
+for(let i = 0; i < n; i++){
+    for(let j = 0; j < n; j++){
+        console.log(i,j);
+    }
+}
+
+Complexity:
+O(n²)
+
+Examples:
+Brute Force Two Sum
+Brute Force Duplicate Search
+
+5.O(log n) — Logarithmic Time
+
+Rule
+Problem size halves every step.
+
+Example:
+1 → 1
+2 → 1
+4 → 2
+8 → 3
+16 → 4
+32 → 5
+
+This is why Binary Search is fast.
+
+Complexity:
+O(log n)
+
+
+6. O(n log n)
+
+Examples:
+Merge Sort
+Quick Sort (average)
+You don't need this immediately.
+
+Just remember:
+Better than O(n²)
+Worse than O(n)
+
+// Memorize This
+
+Time Complexity Ranking:
+Fastest → Slowest
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n²)
+O(n³)
+O(2^n)
+O(n!)
+
