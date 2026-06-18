@@ -1,0 +1,48 @@
+Space Complexity
+
+Measures:
+Extra memory used by algorithm.
+O(1) Space
+let max = 0;
+let min = 0;
+
+Only a few variables.
+
+Space:
+O(1)
+O(n) Space
+let result = [];
+
+or
+
+let freq = {};
+Memory grows with input size.
+
+Space:
+O(n)
+
+
+// IMP
+
+Interview Memory Tricks
+One Loop
+for(...)
+↓
+O(n)
+Nested Loop
+for(...)
+   for(...)
+↓
+O(n²)
+Hash Map / Object
+let freq = {}
+↓
+Space = O(n)
+Array Access
+arr[0]
+↓
+O(1)
+Binary Search
+Half every step
+↓
+O(log n)
