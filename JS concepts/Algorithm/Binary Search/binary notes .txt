@@ -1,0 +1,23 @@
+Binary Search Direction Cheat Sheet
+
+If Number is Too Big:
+mid * mid > x
+↓
+Go Left
+↓
+end = mid - 1;
+
+EX: 49 > 25
+
+Too Small:
+mid * mid < x
+↓
+Go Right
+↓
+start = mid + 1;
+Exact
+mid * mid === x
+↓
+return mid;
+
+EX:  4 < 8
