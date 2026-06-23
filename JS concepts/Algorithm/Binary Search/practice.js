@@ -117,3 +117,84 @@ function binarySearch(arr, target) {
         }
 console.log(binarySearch(arr, target));
 */
+
+// pattern 1
+
+/*
+nums = [10,20,30,40]
+target = 5
+
+function find(nums, target) {
+    let start = 0
+    let end = nums.length -1
+
+    while (start <= end) {
+        let mid = Math.floor((start + end)/2)
+
+        if (nums[mid] === target) {
+            return mid
+        }
+        else if (target < nums[mid]) {
+            end = mid -1;
+        }
+        else{
+            start = mid + 1
+        }
+    }
+    return start;
+}
+console.log(find(nums, target));
+*/
+
+// pattern 2 - Largest integer whose square <= x (LeetCode 69)
+
+/*
+x = 15
+
+function find(x) {
+    let start = 0
+    let end = x
+
+    while (start <= end) {
+        let mid = start + Math.floor((start + end)/2)
+        let result = mid * mid
+        
+        if(result === x){
+            return mid;
+        }
+        else if (result < x) {
+            start = mid + 1;
+        }
+        else {
+            end = mid - 1;
+        }
+    }
+    return end;
+}
+
+console.log(find(x));
+*/
+
+// You have 100 chocolates.Each student must get k chocolates.There are 15 students.
+
+let chocolates = 100;
+let students = 15;
+
+function findLargestK(chocolates, students) {
+    let start = 0;
+    let end = chocolates;
+
+    while (start <= end) {
+        let mid = start + Math.floor((end - start) / 2);
+        let totalNeeded = mid * students;
+
+        if (totalNeeded <= chocolates) {
+            start = mid + 1;
+        } else {
+            end = mid - 1;
+        }
+    }
+    return end;
+}
+
+console.log(findLargestK(chocolates, students));
