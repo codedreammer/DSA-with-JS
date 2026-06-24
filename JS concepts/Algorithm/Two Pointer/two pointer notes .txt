@@ -1,0 +1,33 @@
+THE COPRE OF TWO POINTERS:
+
+patter is:
+if sum < target 
+we use 
+left++  (it meanswe need a largest sum)
+
+next 
+if sum > target 
+we use 
+right--  (need a smaller sum)
+
+and final 
+sum === target 
+answer found
+
+
+NOW the structure  of two pointers
+
+function twoSum(arr, target){
+
+    let left = 0;
+    let right = arr.length - 1;
+
+    while(left < right){
+
+        let sum = arr[left] + arr[right];
+
+        // your logic
+
+    }
+}
+
