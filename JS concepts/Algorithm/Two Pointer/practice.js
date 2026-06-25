@@ -53,5 +53,29 @@ function twopointer(arr, target) {
 console.log(twopointer(arr, target));
 */
 
+// swaping two number 
 
+/*
+let a = 10 
+let b = 12
 
+c = [a,b]=[b,a]
+
+console.log(c);
+*/
+
+let s = [1,2,3]
+
+function Reverse(s) {
+    let left = 0
+    let right = s.length -1
+
+    while (left < right) {
+        [s[right], s[left]] = [s[left], s[right]];
+
+        left++;
+        right--;
+    }
+    return s
+}
+console.log(Reverse(s));
