@@ -11,7 +11,7 @@ function twosum(numbers, target) {
         let sum = numbers[left] + numbers[right] 
 
         if(sum === target){
-        return[left + 1, right + 1];;
+        return[left + 1, right + 1];
     }
     if(sum < target){
         left++;
