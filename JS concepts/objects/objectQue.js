@@ -53,20 +53,20 @@ if (fruits['mango']) {
 // character frequency 
 
 
-let str = "banana";
+// let str = "banana";
 
-let freq = {};
+// let freq = {};
 
-for (let i = 0; i < str.length; i++) {
-    let item = str[i];
+// for (let i = 0; i < str.length; i++) {
+//     let item = str[i];
     
-    if (freq[item]) {
-        freq[item]++;
-    }else{
-        freq[item] = 1;
-    }
-}
-console.log(freq);
+//     if (freq[item]) {
+//         freq[item]++;
+//     }else{
+//         freq[item] = 1;
+//     }
+// }
+// console.log(freq);
 
 /*
 let arr = "akshay";
@@ -160,8 +160,8 @@ console.log(freq);
 */
 
 // find duplicate and print true if yes false for no
-/*
-let arr = [1,2,3,1];
+
+let arr = [1,2,3,4];
 
 let freq = {}
 
@@ -174,4 +174,5 @@ for (let i = 0; i < arr.length; i++) {
         freq[num] =1;
     }
 }
-*/
+
+
