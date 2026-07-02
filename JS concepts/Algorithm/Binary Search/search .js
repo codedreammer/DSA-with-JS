@@ -1,7 +1,7 @@
 // search left and right 
 
 const arr = [1, 2, 2, 2, 3, 4];
-const target = 2;
+const target = 4;
 
 // left search
 
@@ -51,3 +51,21 @@ function findLastOccurrence(arr, target) {
 }
 
 console.log(findLastOccurrence(arr, target));
+
+//first two function
+
+function countOccurance(arr, target) {
+    
+    let firstIndex = findFirstOccurrence(arr, target);
+
+    if (firstIndex === -1) {
+        return 0;
+    }
+    
+    let lastIndex = findLastOccurrence(arr, target);
+
+    return (lastIndex - firstIndex) + 1;
+    
+}
+
+console.log(countOccurance(arr, target));
