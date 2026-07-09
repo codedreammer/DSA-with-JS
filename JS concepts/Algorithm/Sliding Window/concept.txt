@@ -1,0 +1,48 @@
+// Sliding Window avoids recalculating the overlapping part of consecutive windows by reusing the previous result.
+
+How it works?
+
+Sliding Window says:
+We already know:
+
+2 + 1 + 5 = 8
+
+To get the next window:
+
+1 + 5 + 1
+
+Don't calculate everything again.
+
+Just do:
+
+Old Sum
+− Leaving Element
++ Entering Element
+
+Example:
+
+8 - 2 + 1 = 7
+
+We reused our previous work.
+
+
+concept:
+
+Sliding Window Algorithm (Fixed Window)
+
+Problem:
+
+Find the maximum sum of any k consecutive elements.
+
+Algorithm:
+
+Calculate the sum of the first k elements.
+Store it in maxSum.
+Store it in windowSum.
+Slide the window by one position.
+Update the sum:
+windowSum = windowSum - Leaving Element + Entering Element
+Compare:
+maxSum = max(maxSum, windowSum)
+Repeat until the window reaches the end of the array.
+Return maxSum.
