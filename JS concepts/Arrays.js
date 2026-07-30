@@ -4,7 +4,7 @@
 
 // Array methods 
 
-// const myArr = [0,1,2,3,4];
+//let myArr = [0,1,2,3,4];
 
 // myArr.push(10);
 // console.log(myArr);
@@ -84,8 +84,18 @@ console.log(Array.from("Akshay"));
 console.log(Array.from({name:"Akshay"})); // intresting
 */
 
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
+// let score1 = 100;
+// let score2 = 200;
+// let score3 = 300;
 
-console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3));
+
+let arr = [10,20,30];
+
+for (let value of arr) {
+    console.log(value);
+}
+
+for (let index in arr) {
+    console.log(index);
+}
