@@ -99,3 +99,4 @@ for (let value of arr) {
 for (let index in arr) {
     console.log(index);
 }
+// new  revision Question 
