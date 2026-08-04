@@ -1,5 +1,5 @@
 // searching the element from an array
-/*
+
 let data = [20, 40, 60, 5, 10, 70];
 let item = 5;
 let index = [];
@@ -10,7 +10,6 @@ for (let i = 0; i < data.length; i++) {
 
 }
 console.log(index);
-*/
 
 /*
 let data = [10,20,70,40];
@@ -29,7 +28,7 @@ if (index === -1) {
 else{
     console.log(`found at index: ${index}`);
 }
-*/
+
 
 // searching element from an array if 2 same elements are present
 

@@ -94,9 +94,17 @@ let arr = [10,20,30];
 
 for (let value of arr) {
     console.log(value);
-}
+} // print the value 
 
 for (let index in arr) {
     console.log(index);
+} // print the index
+
+let freq = {};
+let num = 0
+for (let i = 0; i < arr.length; i++) {
+    freq[num] = (freq[num] || 0) + 1;
+    console.log(freq)
 }
-// new  revision Question 
+
+// new  revision Question  
