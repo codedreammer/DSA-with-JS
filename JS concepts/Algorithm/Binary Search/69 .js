@@ -22,4 +22,3 @@ function squareroot(x) {
         }
 
         console.log(squareroot(x));
-        
