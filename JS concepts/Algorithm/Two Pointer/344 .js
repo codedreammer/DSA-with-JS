@@ -14,3 +14,19 @@ function Reversestring(s) {
     return s
 }
 console.log(Reversestring(s));
+
+// let Q = ["a","k","s","y"]
+
+// function Reverse(Q) {
+    
+//     let left = 0
+//     let right = Q.length-1;
+
+//     while (left < right) {
+//         [Q[left], Q[right]] = [Q[right], Q[left]];
+//         left++
+//         right--
+//     }
+//     return Q
+// }
+// console.log(Reverse(Q));
