@@ -20,29 +20,82 @@ function binarySearch(arr, first, last, target) {
 }
 */
 
-// first binary search 
-/*
-let arr = [10,20,30,40,50,60,70]
+// first question is i have to find first  and last occurance in an element 
+
+// let arr = [10,20,30,40,50,50,50,60,70]
+// let target = 50
+
+// function binarySearch(arr, target){
+//     let start = 0;
+//     let end = arr.length - 1;
+//     while (start <= end) {
+//         let mid = Math.floor((start - end)/2);
+//         if(arr[mid] === target){
+//             return mid;
+//         }
+//         else if (target < arr[mid]) {
+//             end = mid - 1;
+//         }else {
+//             start = mid + 1;
+//         }
+//     }
+//     return -1;
+// }
+// console.log(binarySearch(arr, target));
+
+
+let arr = [10,20,30,40,50,50,50,60,70]
 let target = 50
 
-function binarySearch(arr, target){
-    let start = 0;
-    let end = arr.length - 1;
+function firstOccurrence(arr, target) {
+    let start = 0
+    let end = arr.length - 1
+    let answer = -1
+
     while (start <= end) {
         let mid = Math.floor((start + end)/2);
         if(arr[mid] === target){
-            return mid;
+            answer = mid;
+            end = mid - 1;
         }
         else if (target < arr[mid]) {
             end = mid - 1;
-        }else {
+        }
+        else {
             start = mid + 1;
         }
     }
-    return -1;
+    return answer;
 }
-console.log(binarySearch(arr, target));
-*/
+
+function lastOccurrence(arr, target) {
+    let start = 0
+    let end = arr.length - 1
+    let answer = -1
+
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2)
+
+        if (arr[mid] === target) {
+            answer = mid
+            start = mid + 1
+        }
+        else if (target < arr[mid]) {
+            end = mid - 1
+        }
+        else {
+            start = mid + 1
+        }
+    }
+
+    return answer
+}
+
+console.log([
+    firstOccurrence(arr, target),
+    lastOccurrence(arr, target)
+])
+
 
 // 1. Search Target
 
@@ -177,6 +230,7 @@ console.log(find(x));
 
 // You have 100 chocolates.Each student must get k chocolates.There are 15 students.
 
+/*
 let chocolates = 100;
 let students = 15;
 
@@ -198,3 +252,4 @@ function findLargestK(chocolates, students) {
 }
 
 console.log(findLargestK(chocolates, students));
+*/

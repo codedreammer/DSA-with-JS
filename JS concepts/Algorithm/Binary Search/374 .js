@@ -1,6 +1,6 @@
 // 374 
 
-let n = 10
+let n = 10 
 
 function guessNumber(n) {
     let start = 1;
