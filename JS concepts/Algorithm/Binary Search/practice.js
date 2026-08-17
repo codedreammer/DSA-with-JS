@@ -43,63 +43,9 @@ function binarySearch(arr, first, last, target) {
 // }
 // console.log(binarySearch(arr, target));
 
-
-let arr = [10,20,30,40,50,50,50,60,70]
-let target = 50
-
-function firstOccurrence(arr, target) {
-    let start = 0
-    let end = arr.length - 1
-    let answer = -1
-
-    while (start <= end) {
-        let mid = Math.floor((start + end)/2);
-        if(arr[mid] === target){
-            answer = mid;
-            end = mid - 1;
-        }
-        else if (target < arr[mid]) {
-            end = mid - 1;
-        }
-        else {
-            start = mid + 1;
-        }
-    }
-    return answer;
-}
-
-function lastOccurrence(arr, target) {
-    let start = 0
-    let end = arr.length - 1
-    let answer = -1
-
-    while (start <= end) {
-        let mid = Math.floor((start + end) / 2)
-
-        if (arr[mid] === target) {
-            answer = mid
-            start = mid + 1
-        }
-        else if (target < arr[mid]) {
-            end = mid - 1
-        }
-        else {
-            start = mid + 1
-        }
-    }
-
-    return answer
-}
-
-console.log([
-    firstOccurrence(arr, target),
-    lastOccurrence(arr, target)
-])
-
-
 // 1. Search Target
 
-/*
+
 let arr = [1,2,3,4,5,6,7];
 let target = 6
 
@@ -120,7 +66,6 @@ function binarySearch(arr, target) {
     return -1;
 }
 console.log(binarySearch(arr, target));
-*/
 
 // 2. Search Target Not Found
 /*
